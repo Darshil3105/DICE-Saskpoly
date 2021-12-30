@@ -1,0 +1,260 @@
+.form-container{
+    display: inline;
+    width: 800px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.user-name{
+    display: inline;
+    position: relative;
+    font-size: 25px;
+    margin-left: 20px;
+    top: 10px;
+}
+
+.user-role{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    margin-left: 120px;
+    top: 5px;
+}
+
+.add-buttons{
+    display: inline-block;
+    margin-left: 350px;
+    top: 0;
+    margin-top: 100px;
+    padding: 0px;
+    position: absolute;
+}
+
+button{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.form-edit{
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.form-edit-fields label{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.form-edit-fields input[type=password], .form-edit-fields input[type=text]{
+    margin-left: 300px;
+    top: 0;
+    margin-top: 10px;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-edit-fields input[type=file], .form-edit-fields input[type=date]{
+    margin-left: 300px;
+    top: 0;
+    margin-top: 10px;
+}
+
+.form-edit-fields textarea{
+    margin-left: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 12px 20px;
+    width: 198px;
+    height: 80px;
+    position: relative;
+}
+
+.form-edit-fields select{
+    margin-left: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 12px 20px;
+    position: relative;
+    width: 198px;
+}
+
+.form-edit-fields input[type=checkbox]{
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+.form-edit-fields button{
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+.form-edit-fields p{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.msg{
+    display:none;
+    color:red;
+}
+
+/*Css for mobile screen */
+
+@media only screen and (max-width: 480px) {
+    .form-container{
+        display: inline-block;
+        width: 400px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+        float: left;
+    }
+
+    .user-name{
+        display: inline;
+        position: relative;
+        font-size: 13px;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .user-role{
+        display: block;
+        position: relative;
+        font-size: 10px;
+        margin-left: 60px;
+        top: 0;
+    }
+
+    .add-buttons{
+        display: inline-block;
+        margin-left: 160px;
+        top: 0;
+        margin-top: 50px;
+        padding: 0px;
+        position: absolute;
+    }
+
+    button{
+        padding: 8px 12px;
+        font-size: 8px;
+        margin: 2px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .form-edit{
+        width: 300px;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .form-edit-fields label{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .form-edit-fields input[type=password], .form-edit-fields input[type=text]{
+        margin-left: 150px;
+        top: 0;
+        margin-top: 5px;
+        padding: 6px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 130px;
+        font-size: 10px;
+    }
+
+    .form-edit-fields textarea{
+        margin-left: 150px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 5px;
+        padding: 6px 8px;
+        width: 130px;
+        font-size: 10px;
+        height: 60px;
+    }
+
+    .form-edit-fields select{
+        margin-left: 150px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 5px;
+        padding: 6px 8px;
+        width: 130px;
+        font-size: 10px;
+    }
+
+    .form-edit-fields input[type=checkbox]{
+        margin-left: 150px;
+        margin-top: 5px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .checkbox-font{
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+    }
+
+    .form-edit-fields button{
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .form-edit-fields input[type=file], .form-edit-fields input[type=date]{
+        margin-left: 150px;
+        top: 0;
+        margin-top: 5px;
+        width: 50%;
+        font-size: 10px;
+    }
+}

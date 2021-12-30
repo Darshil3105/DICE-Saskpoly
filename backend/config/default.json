@@ -1,0 +1,4 @@
+{
+    "mongoURI" : "mongodb+srv://mean123:mean123@cluster0-j9mvk.mongodb.net/Diceproject?retryWrites=true&w=majority",
+    "jwtSecret" : "jwtSecret"
+}

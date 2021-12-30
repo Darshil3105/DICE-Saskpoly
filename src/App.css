@@ -1,0 +1,474 @@
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.container{
+    display: inline-block;
+    width: 690px;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-right: auto;
+    position: absolute;
+}
+
+@-webkit-keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(400px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(400px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.fadeInUpBig{
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+}
+
+.container-head{
+    font-size: 30px;
+    color: grey;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.container-para {
+    text-align: justify-all;
+    font-size: 22px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.rest-logo{
+    width: 270px;
+    height: 130px;
+    margin-left: 120px;
+    margin-top: 15px;
+    float: left;
+}
+
+.rest-propic{
+    width: 160px;
+    height: 100px;
+    margin-right: 390px;
+    float: right;
+}
+
+.bottomBorder{
+    border-bottom: 3px solid gray;
+}
+
+.imgAbout{
+    float: left;
+    width: 1290px;
+    height: 320px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.about-container{
+    display: inline-block;
+    width: 970px;
+    height: 480px;
+    margin-left: 120px;
+}
+
+.about-head{
+    font-size: 27px;
+    color: purple;
+}
+
+.about-display-para{
+    background-color: purple;
+    display: none;
+}
+
+.about-display-hover-para:hover + .about-display-para{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    z-index: 1;
+    position: absolute;
+    width: 60%;
+}
+
+.services-offered-head{
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.people-in-hierarchy{
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.services{
+    margin-left: 20px;
+}
+
+.services ul{
+    column-count : 3;
+}
+
+.contact-content{
+    margin-left: 20px;
+}
+
+.contact-content h3{
+    font-size: 22px;
+}
+
+.contact-content h3 span{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.sample-project-container{
+    display: inline-block;
+    width: 970px;
+    height: 555px;
+    margin-left: 120px;
+}
+
+.navbar {
+    overflow: hidden;
+    float: right;
+    margin-right: 120px;
+    margin-top: 130px;
+}
+
+.navbar a {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 2px solid black;
+}
+
+.navbar a:nth-child(n+6){
+    border-right: none;
+}
+
+.navbar a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: gray;
+    color: white;
+}
+
+.navicon{
+    display: none;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: white;
+    color: purple;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.dropdown:hover .dropbtn:hover{
+    background-color: gray;
+    color: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+    border: none;
+}
+
+.dropdown-content a{
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: gray;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*Css for mobile screen*/
+
+@media only screen and (max-width: 480px) {
+    .rest-logo{
+        width: 140px;
+        height: 70px;
+        margin-left: 120px;
+        margin-top: 15px;
+        float: left;
+    }
+
+    .navicon{
+        display: block;
+        position: absolute;
+        background-color: purple;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    .container{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 350px;
+        margin-left: 30px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
+
+    .container-head{
+        font-size: 15px;
+        color: grey;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .container-para {
+        text-align: justify-all;
+        font-size: 11px;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar a{
+        border-right: none;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background-color: grey;
+        color: white;
+        overflow: hidden;
+    }
+
+    .navicon:hover+.navbar,.navbar:hover{
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        top:50px;
+        margin-top: 0px;
+        margin-left: 9px;
+        padding: 5px;
+        width: 70px;
+        background-color: gray;
+        color: #FFFFFF;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .imgAbout{
+        display: none;
+    }
+
+    .about-container{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 350px;
+        margin-left: 20px;
+        text-align: justify-all;
+    }
+
+    .about-container p{
+        text-align: justify-all;
+        font-size: 12px;
+        margin-right: 50px;
+    }
+
+    .about-head{
+        font-size: 18px;
+        color: purple;
+    }
+
+    .about-display-hover-para:hover + .about-display-para{
+        display: none;
+    }
+
+    .services-offered-head{
+        font-size: 8px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+    .rest-propic{
+        width: 80px;
+        height: 50px;
+        margin-right: 200px;
+        float: right;
+    }
+
+    .people-in-hierarchy{
+        font-size: 8px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+    .bottomBorder{
+        border-bottom: 2px solid gray;
+        width: 300px;
+    }
+
+    .services{
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+
+    .services ul{
+        column-count: 1;
+        font-size: 15px;
+    }
+
+    .sample-project-container{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 490px;
+        margin-left: 60px;
+    }
+
+    .services-offered-head > ol{
+        padding-right: 250px;
+        margin-bottom: 260px;
+    }
+
+    .services-offered-head > ol > li{
+        position: absolute;
+        margin-left: 0;
+    }
+
+    .contact-content{
+        display: block;
+        position: relative;
+        padding-bottom: 150px;
+    }
+
+    .contact-content>h3{
+        font-size: 11px;
+    }
+
+    .contact-content>h3>span{
+        font-size: 10px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+    .dropdown .dropbtn{
+        font-size: 10px;
+        padding: 7px 8px;
+        background-color: gray;
+        color: white;
+    }
+
+    .dropdown:hover .dropbtn:hover{
+        background-color: gray;
+        color: white;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: relative;
+        background-color: gray;
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a{
+        float: none;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover{
+        background-color: gray;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+}
